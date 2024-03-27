@@ -14,7 +14,7 @@ node{
 	        }
 	    }
       stage('DOCKER IMAGE BUILD'){
-   sh 'docker build -t vm2322/myweb:0.0.2 .'
+   sh 'docker build -t lalli/myweb:0.0.2 .'
    }
       stage('DOCKERHUB PUSH'){
    withCredentials([string(credentialsId: 'dockerPass', variable: 'dockerPassword')]) {
